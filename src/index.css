@@ -25,20 +25,25 @@ html {
     scroll-behavior: smooth; 
 }
 body {
+    height: 100%;
+    width: 100%;
     overflow-x: hidden;
     scroll-behavior: smooth; 
     transition: all 1.5s cubic-bezier(0.25, 0.8, 0.5, 1); /* Adjust cubic-bezier for smoother damping */
   }
 .heroSection {
     height: 200vh;
+    width: 100%;
     background: #b12936;
 }
 .section2 {
     height: 200vh;
+    width: 100%;
     background:#f1c6cf;
 }
 .section3 {
     height: 200vh;
+    width: 100%;
     background: rgb(255,175,45);
 }
 .FooterImage {

@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css'; // Or the correct path to your Tailwind CSS file
+import './index.css'; 
+import './responsive.css';
+
 import { MainCanvas } from './mainCanvas';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
