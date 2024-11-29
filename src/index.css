@@ -84,6 +84,7 @@ nav ul li a:hover{
     font-family: 'Pattaya', sans-serif;
 }
 .divdrinkSent{
+    width: 90%;
     position: relative;
     top: 25%;
     left: 5%;
@@ -136,3 +137,10 @@ nav ul li a:hover{
     height: 70px;
     padding: 0;
 }
+
+
+
+
+
+
+
