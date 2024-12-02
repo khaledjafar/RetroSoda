@@ -33,6 +33,32 @@ export function MainScene() {
 
 
     useGSAP(() => {
+      gsap.fromTo(
+        can1Ref.current.position,
+        { x: -10, y: 10, z: 0 }, // Starting position
+        {
+          x: -0.5,
+          y: -0.5,
+          z: 0, // Ending position
+          duration: 1.3, // Duration of animation
+          ease: "elastic.out(1,1)", // Easing
+        }
+      );
+
+
+      gsap.fromTo(
+        can2Ref.current.position,
+        { x: 3, y: 10, z: 3 }, // Starting position for can2
+        {
+          x: 2,
+          y: -0.5,
+          z: -1, // Ending position
+          duration: 1.5, // Duration of animation
+          ease: "elastic.out(1, 1)",
+        }
+      );
+
+
       const timeline = gsap.timeline({
         scrollTrigger: {
           trigger: 'body',
@@ -47,13 +73,13 @@ export function MainScene() {
         //can2 position
         .to(can2Ref.current.position, {
           x:2, y:6.5, z:-1,
-          duration: 2,
-          ease: "power3.inOut"
+          duration: 1,
+          ease: "power3.Out"
         },0)  
         .to(can1Ref.current.position, {
           x:0.5, y:-1, z:2,
           duration: 2,
-          ease: "power3.inOut"
+          ease: "power3.Out"
         },0)
         //rotation [x and z]
         .to(can1SpinRef.current.rotation, {
